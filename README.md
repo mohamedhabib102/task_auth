@@ -192,14 +192,6 @@ The easiest way to deploy is using [Vercel](https://vercel.com):
 - **Self-hosted**: Run `npm run build` then `npm start` on your server
 - **Netlify**: Use Next.js adapter for Netlify
 
-## 📚 Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs) - Learn Next.js features
-- [React Documentation](https://react.dev) - React concepts and APIs
-- [Tailwind CSS Docs](https://tailwindcss.com/docs) - Utility-first styling
-- [Swiper Docs](https://swiperjs.com/swiper-api) - Carousel library
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - TypeScript guide
-
 ## 📝 License
 
 This project is private and for internal use.
