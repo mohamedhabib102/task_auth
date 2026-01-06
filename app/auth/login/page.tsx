@@ -1,6 +1,7 @@
 "use client";
 import instance from "@/lib/axios";
 import { useAuth } from "@/lib/context/authContext";
+import { CustomAxiosRequestConfig } from "@/types/Types";
 import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -45,7 +46,9 @@ const PageLogin = () => {
     
             fromData.append("email", data?.email || '');
             fromData.append("password", data?.password || '');
-            const res = await instance.post("auth/login", fromData);
+            const res = await instance.post("auth/login", fromData, 
+              {skipAuth: true} as CustomAxiosRequestConfig
+            );
 
             const { id, type, name, email, mobile_country_code, mobile, image, email_verified_at, token } = res.data.data;
 

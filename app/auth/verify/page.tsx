@@ -1,6 +1,7 @@
 "use client";
 import instance from "@/lib/axios";
 import { useAuth } from "@/lib/context/authContext";
+import { CustomAxiosRequestConfig } from "@/types/Types";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
