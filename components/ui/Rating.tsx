@@ -1,6 +1,8 @@
+"use client"
 import { FaCommentDots, FaStar } from "react-icons/fa";
 import CustomContainer from "./CustomContainer";
 import CustomTitle from "./CustomTitle"
+import { motion } from "framer-motion";
 
 
 
@@ -40,9 +42,16 @@ const Rating = () => {
           <CustomTitle 
           title="Rating & Reviews" 
           />
-          {/* Ratings */}
-          <div className="flex lg:flex-row flex-col items-center justify-between">
-             <div className="lg:w-[60%] w-full flex lg:flex-row flex-col items-center gap-6">
+
+            {/* Ratings */}
+           <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="flex lg:flex-row flex-col items-center justify-between"
+            >
+                 <div className="lg:w-[60%] w-full flex lg:flex-row flex-col items-center gap-6">
                  <div className="relative">
                      <h2 className="inline-block text-[120px] font-medium mr-2">4,5</h2>
                      <span className="inline-block text-2xl text-[#B0B0B0]">/5</span>
@@ -69,16 +78,24 @@ const Rating = () => {
                 <span className="text-[#545454] mb-2 block">Total Reviews</span>
                 <h3 className="text-6xl font-semibold mb-8">3.0K</h3>
                 <button className="bg-[#BE968E] px-8 py-4 rounded-xl
-                text-white w-49.5 flex items-center gap-3">
+                text-white w-52.5 flex items-center gap-3">
                     <span className="text-[15px]">Add Comment</span>
                 <FaCommentDots size={20} className="text-[#FFFFFF]"/>
                 </button>
              </div>
-          </div>
+            </motion.div>
+
+
 
           {/* Comments */}
-          <div className="my-12 py-8">
-              <div className="space-y-6">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="my-12 py-8"
+            >
+                <div className="space-y-6">
                   {[1, 2, 3, 4].map((item) => (
                       <div key={item} className="pb-6 border-b border-gray-200 last:border-b-0">
                           <div className="flex items-start justify-between mb-3">
@@ -105,7 +122,7 @@ const Rating = () => {
                       View More Comments
                   </button>
               </div>
-          </div>
+            </motion.div>
         </CustomContainer>
     )
 };export default Rating;

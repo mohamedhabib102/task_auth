@@ -4,12 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { BsFillHandbagFill } from 'react-icons/bs'
-import { AiOutlineHeart } from 'react-icons/ai'
 import { GoChevronLeft, GoChevronRight } from "react-icons/go"
 import Image from "next/image"
 import { FaStar } from "react-icons/fa"
 import CustomTitle from "./CustomTitle"
+import { motion } from "framer-motion";
 
 const similarProducts = [
   {
@@ -83,8 +82,14 @@ const Similar = () => {
                 <CustomTitle
                 title="Similar Items"
                 />
-
-                <Swiper
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                
+            >
+                                <Swiper
                     modules={[Navigation]}
                    navigation={{
                      nextEl: `#${nextEl}`,
@@ -166,7 +171,7 @@ const Similar = () => {
                   >
                     <GoChevronRight size={24} className="text-white" />
                   </button>
-                  
+
                   <button 
                     id={prevEl}
                     className="bg-[#BE968E] w-12 h-12 rounded-full flex justify-center items-center"
@@ -175,6 +180,9 @@ const Similar = () => {
                   </button>
 
                 </div>
+            </motion.div>
+
+
             </div>
         </CustomContainer>
     )

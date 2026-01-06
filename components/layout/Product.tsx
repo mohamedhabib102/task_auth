@@ -5,6 +5,7 @@ import CustomContainer from "../ui/CustomContainer";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import { BsFillHandbagFill } from "react-icons/bs";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 
 const Product = () => {
@@ -23,7 +24,14 @@ const Product = () => {
             {/* Main Product Section */}
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 my-10">
                 {/* Left Side - Images */}
-                <div className="">
+               
+                    <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}        
+                    >
+
+                    
                     <div className="bg-[#F5F5F5] rounded-3xl mb-4  overflow-hidden relative pt-6 z-20">
                         <Image
                             src="/images/produc1.png"
@@ -70,11 +78,16 @@ const Product = () => {
                             <span className="absolute text-white text-3xl font-semibold">+2</span>
                         </div>
                     </div>
-                </div>
-
-                {/* Right Side - Details */}
-                <div className="w-full">
-                    {/* Product Type Badge */}
+          
+                </motion.div>
+                
+                 <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }} 
+                    className="w-full"       
+                    >
+                                    {/* Product Type Badge */}
                     <div className="flex items-center justify-between">
                         <span className="text-sm text-[#BE968E] font-semibold py-2 px-4 border border-[#BE968E]
                     rounded-4xl capitalize">T-Shirt</span>
@@ -195,9 +208,7 @@ const Product = () => {
                             <BsFillHandbagFill  size={20} />
                         </button>
                     </div>
-
-
-                </div>
+                    </motion.div>
             </div>
 
         </CustomContainer>

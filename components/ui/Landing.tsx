@@ -1,9 +1,15 @@
+"use client"
 import Image from "next/image";
+import { motion } from "framer-motion";
 const Landing: React.FC = () => {
   return (
-    <div className="relative w-full h-35 md:h-50 overflow-hidden">
-      
-      {/* Background Image */}
+       <motion.div
+         initial={{ opacity: 0, y: 30 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}   
+         className="relative w-full h-35 md:h-50 overflow-hidden"     
+         >
+                {/* Background Image */}
       <Image
         src="/images/lading.jpg"
         alt="Landing Banner"
@@ -47,7 +53,7 @@ const Landing: React.FC = () => {
           T-Shirt
         </h1>
       </div>
-    </div>
+      </motion.div>
   );
 };
 

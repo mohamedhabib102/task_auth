@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaTelegramPlane } fr
 import { MdLocalPhone, MdEmail, MdLocationOn } from "react-icons/md"
 import { TbBrandWhatsappFilled } from "react-icons/tb"
 import CustomContainer from "../ui/CustomContainer"
+import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   return (
@@ -16,8 +17,14 @@ const Footer: React.FC = () => {
 
       {/* centered content */}
       <CustomContainer>
-        <div className="py-14 text-white">
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="py-14 text-white"
+        >
+                      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo + text */}
             <div className="space-y-4 col-span-2 lg:col-span-1">
               <div className="w-32">
@@ -93,8 +100,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-
-        </div>
+        </motion.div>
       </CustomContainer>
     </footer>
   )
