@@ -109,12 +109,6 @@ npm run build
 npm start
 ```
 
-### Linting
-
-```bash
-npm run lint
-```
-
 ## 📄 Available Scripts
 
 - `npm run dev` - Start development server with hot-reload
