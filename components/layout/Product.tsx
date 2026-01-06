@@ -80,7 +80,7 @@ const Product = () => {
                     </div>
           
                 </motion.div>
-                
+
                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -171,23 +171,23 @@ const Product = () => {
                     <div className="my-12">
                         <label className="text-[20px] font-medium mb-3 block">Colors</label>
                         <div className="flex gap-3">
-                            <div className="w-16 h-16 rounded-full bg-[#F4F7F9] p-3.5 flex justify-center items-center">
-                                <button className="w-8 h-8 bg-[#D90202] rounded-full border-2 border-gray-300"></button>
+                            <div className="lg:w-16 w-11 lg:h-16 h-11 rounded-full bg-[#F4F7F9] lg:p-3.5 flex justify-center items-center">
+                                <button className="lg:w-8 lg:h-8 w-6 h-6 bg-[rgb(217,2,2)] rounded-full border-2 border-gray-300"></button>
                             </div>
-                            <div className="relative w-16 h-16 rounded-full bg-[#F4F7F9] border border-[#020202] p-3.5 flex justify-center items-center">
-                                <button className="w-8 h-8 bg-[#B8CCDA] rounded-full border-2 border-gray-300"></button>
+                            <div className="relative lg:w-16 w-11 lg:h-16 h-11 rounded-full bg-[#F4F7F9] border border-[#020202] lg:p-3.5 flex justify-center items-center">
+                                <button className="lg:w-8 lg:h-8 w-6 h-6 bg-[#B8CCDA] rounded-full border-2 border-gray-300"></button>
                                 <span className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-sm">Blue</span>
                             </div>
-                            <div className="w-16 h-16 rounded-full bg-[#F4F7F9] p-3.5 flex justify-center items-center">
-                                <button className="w-8 h-8 bg-[#988755] rounded-full border-2 border-gray-300"></button>
+                            <div className="lg:w-16 w-11 lg:h-16 h-11 rounded-full bg-[#F4F7F9] lg:p-3.5 flex justify-center items-center">
+                                <button className="lg:w-8 lg:h-8 w-6 h-6 bg-[#988755] rounded-full border-2 border-gray-300"></button>
                             </div>
 
-                            <div className="w-16 h-16 rounded-full bg-[#F4F7F9] p-3.5 flex justify-center items-center">
-                                <button className="w-8 h-8 bg-[#7198C8] rounded-full border-2 border-gray-300"></button>
+                            <div className="lg:w-16 w-11 lg:h-16 h-11 rounded-full bg-[#F4F7F9] lg:p-3.5 flex justify-center items-center">
+                                <button className="lg:w-8 lg:h-8 w-6 h-6 bg-[#7198C8] rounded-full border-2 border-gray-300"></button>
                             </div>
 
-                            <div className="w-16 h-16 rounded-full bg-[#F4F7F9] p-3.5 flex justify-center items-center">
-                                <button className="w-8 h-8 bg-[#5D5D5B] rounded-full border-2 border-gray-300"></button>
+                            <div className="lg:w-16 w-11 lg:h-16 h-11 rounded-full bg-[#F4F7F9] lg:p-3.5 flex justify-center items-center">
+                                <button className="lg:w-8 lg:h-8 w-6 h-6 bg-[#5D5D5B] rounded-full border-2 border-gray-300"></button>
                             </div>
                         </div>
                     </div>

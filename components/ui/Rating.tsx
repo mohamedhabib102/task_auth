@@ -53,7 +53,7 @@ const Rating = () => {
             >
                  <div className="lg:w-[60%] w-full flex lg:flex-row flex-col items-center gap-6">
                  <div className="relative">
-                     <h2 className="inline-block text-[120px] font-medium mr-2">4,5</h2>
+                     <h2 className="inline-block lg:text-[120px] text-[80px] font-medium mr-2">4,5</h2>
                      <span className="inline-block text-2xl text-[#B0B0B0]">/5</span>
                  </div>
                  <div className="lg:w-[65%] w-full">
@@ -99,8 +99,8 @@ const Rating = () => {
                   {[1, 2, 3, 4].map((item) => (
                       <div key={item} className="pb-6 border-b border-gray-200 last:border-b-0">
                           <div className="flex items-start justify-between mb-3">
-                              <div className="flex items-center gap-3">
-                                  <h4 className="font-semibold text-[20px]">Alex Daewn</h4>
+                              <div className="flex items-center gap-2">
+                                  <h4 className="font-semibold lg:text-[20px] text-sm">Alex Daewn</h4>
                                   <div className="flex gap-1">
                                       {[1, 2, 3, 4].map((star) => (
                                           <FaStar key={star} size={16} color="#BE968E" />
@@ -108,7 +108,7 @@ const Rating = () => {
                                       <FaStar size={16} color="#E0E0E0" />
                                   </div>
                               </div>
-                              <span className="text-[#020202]">4 months ago</span>
+                              <span className="text-[#020202] lg:text-sm text-[10px]">4 months ago</span>
                           </div>
                           <p className="text-gray-700 text-sm leading-relaxed">
                               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
