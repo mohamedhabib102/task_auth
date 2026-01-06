@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="py-14 text-white"
         >
-                      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo + text */}
             <div className="space-y-4 col-span-2 lg:col-span-1">
               <div className="w-32">
@@ -85,8 +85,8 @@ const Footer: React.FC = () => {
             <div className="col-span-2 lg:col-span-1">
               <h4 className="font-semibold mb-4 text-lg">Send Email</h4>
               <div className="flex items-center gap-2 bg-white rounded-lg p-1 relative mb-6">
-                <input placeholder="Email address" className="flex-1 px-3 py-2 text-xs outline-none text-black rounded-l-lg" />
-                <button className="bg-[#BE968E] text-white px-4 py-2 rounded-lg text-xs">Send</button>
+                <input placeholder="Email address" className="flex-1 px-3 py-2.5 text-xs outline-none text-black rounded-l-lg" />
+                <button className="bg-[#BE968E] text-white px-4 py-2 rounded-lg text-xs absolute right-1.5">Send</button>
               </div>
 
               <div className="text-sm text-white mb-3">Follow Us</div>
