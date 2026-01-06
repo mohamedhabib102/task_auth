@@ -7,15 +7,15 @@ const Landing: React.FC = () => {
          initial={{ opacity: 0, y: 30 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.8 }}   
-         className="relative w-full h-35 md:h-50 overflow-hidden"     
+         className="relative w-full h-71 md:h-33 overflow-hidden"     
          >
-                {/* Background Image */}
+        {/* Background Image */}
       <Image
         src="/images/lading.jpg"
         alt="Landing Banner"
-        fill
-        priority
-        className="object-cover opacity-5"
+        width={800}
+        height={100}
+        className="object-cover opacity-5 w-full h-full"
       />
 
       {/* Big faded background text */}

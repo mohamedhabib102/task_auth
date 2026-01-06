@@ -97,23 +97,30 @@ const Rating = () => {
             >
                 <div className="space-y-6">
                   {[1, 2, 3, 4].map((item) => (
-                      <div key={item} className="pb-6 border-b border-gray-200 last:border-b-0">
-                          <div className="flex items-start justify-between mb-3">
-                              <div className="flex items-center gap-2">
-                                  <h4 className="font-semibold lg:text-[20px] text-sm">Alex Daewn</h4>
-                                  <div className="flex gap-1">
-                                      {[1, 2, 3, 4].map((star) => (
-                                          <FaStar key={star} size={16} color="#BE968E" />
-                                      ))}
-                                      <FaStar size={16} color="#E0E0E0" />
-                                  </div>
-                              </div>
-                              <span className="text-[#020202] lg:text-sm text-[10px]">4 months ago</span>
-                          </div>
-                          <p className="text-gray-700 text-sm leading-relaxed">
-                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                          </p>
-                      </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        key={item} className="pb-6 border-b border-gray-200 last:border-b-0"
+                    >
+                       <div className="flex items-start justify-between mb-3">
+                         <div className="flex items-center gap-2">
+                             <h4 className="font-semibold lg:text-[20px] text-sm">Alex Daewn</h4>
+                             <div className="flex gap-1">
+                                 {[1, 2, 3, 4].map((star) => (
+                                     <FaStar key={star} size={16} color="#BE968E" />
+                                 ))}
+                                 <FaStar size={16} color="#E0E0E0" />
+                             </div>
+                         </div>
+                         <span className="text-[#020202] lg:text-sm text-[10px]">4 months ago</span>
+                     </div>
+                     <p className="text-gray-700 text-sm leading-relaxed">
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                     </p>
+                    </motion.div>
+
                   ))}
               </div>
               <div className="text-center mt-8">

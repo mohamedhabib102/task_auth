@@ -18,7 +18,8 @@ const Product = () => {
                 <RiArrowRightSLine size={29} />
                 <span className="lg">Our Category</span>
                 <RiArrowRightSLine size={29} />
-                <span className="text-[#8A8A8A]">Product Details</span>
+                <span className="text-[#8A8A8A] lg:block hidden">Product Details</span>
+                <span className="text-[#8A8A8A] lg:hidden block">T-Shirt</span>
             </div>
 
             {/* Main Product Section */}
@@ -87,7 +88,7 @@ const Product = () => {
                     transition={{ duration: 0.8 }} 
                     className="w-full"       
                     >
-                                    {/* Product Type Badge */}
+                    {/* Product Type Badge */}
                     <div className="flex items-center justify-between">
                         <span className="text-sm text-[#BE968E] font-semibold py-2 px-4 border border-[#BE968E]
                     rounded-4xl capitalize">T-Shirt</span>
@@ -127,7 +128,7 @@ const Product = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-sm my-4 font-normal">
+                    <p className="text-gray-600 text-sm my-4 font-normal pb-4.5 border-b border-[#E6E6E6]">
                         Lorem ipsum dolor sit, consectetur adipiscing elit, sed diam nonummy Lorem ipsum dolor sit diam nonummy
                     </p>
 

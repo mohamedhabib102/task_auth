@@ -33,8 +33,8 @@ const Footer: React.FC = () => {
                  height={51} 
                  className="object-contain" />
               </div>
-              <p className="text-sm text-[#E8DCD7] font-medium">
-                Ipsum in eos qui consequatur ab cum maxime. Soluta dolor quae Ipsam in eos qui consequatur ab.
+              <p className="text-sm text-[#E8DCD7] font-medium pb-3">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
               </p>
             </div>
 
