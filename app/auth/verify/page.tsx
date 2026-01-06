@@ -3,7 +3,7 @@ import instance from "@/lib/axios";
 import { useAuth } from "@/lib/context/authContext";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineLoading } from "react-icons/ai";
 
 
@@ -55,6 +55,15 @@ const PageLogin = () => {
         }
     }
 
+    useEffect(() => {
+       if (!userData?.id){
+         router.push("/")
+        }
+        
+      if (userData?.email_verified_at){
+          router.push("/")
+      }
+     }, [])
       
     return (
     <section

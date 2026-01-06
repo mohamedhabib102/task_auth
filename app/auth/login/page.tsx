@@ -4,7 +4,7 @@ import { useAuth } from "@/lib/context/authContext";
 import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineLoading } from "react-icons/ai";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
@@ -13,7 +13,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const PageLogin = () => {
     const [eye, setEye] = useState(false);
-    const { login } = useAuth();
+    const { login , userData} = useAuth();
     const [message, setMessage] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const router = useRouter();
@@ -81,6 +81,13 @@ const PageLogin = () => {
   const handleEye = () => {
     setEye(!eye);
   };
+
+
+  useEffect(() => {
+    if (userData?.id){
+      router.push("/")
+    }
+  }, [])
     return (
     <section
       className="flex justify-center items-center h-[90vh] p-4"

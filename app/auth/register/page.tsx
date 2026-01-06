@@ -3,7 +3,7 @@ import instance from "@/lib/axios";
 import { CustomAxiosRequestConfig } from "@/types/Types";
 import axios from "axios";
 import { AiOutlineLoading } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useAuth } from "@/lib/context/authContext";
 import Link from "next/link";
@@ -104,7 +104,7 @@ const PageRegister = () => {
             console.log(error);
             if (axios.isAxiosError(error)) {
                if (error.response?.status === 422){
-                setMessage("The email has already been taken");
+                setMessage("The email has already been taken or the password does not match");
                } 
                if (error.response?.status === 400){
                 setMessage("Invalid phone number, country code, or number already registered");
@@ -114,6 +114,13 @@ const PageRegister = () => {
             setLoading(false);
         }
     }
+
+    
+      useEffect(() => {
+        if (userData?.id){
+          router.push("/")
+        }
+      }, [])
 
     return (
     <section
