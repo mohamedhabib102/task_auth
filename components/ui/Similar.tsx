@@ -112,9 +112,32 @@ const Similar = () => {
                                         <div className="absolute top-3 text-[#BE968E] left-3 bg-white py-2 px-3 rounded-lg text-[10px]
                                         border border-[#4040401A]">{p.badge}</div>
                                     )}
-                                    <div className="absolute top-3 right-3 flex gap-2">
-                                      
-                                     <button className="w-9 h-9 rounded-lg border border-[#4040401A] p-1.5">
+                                    <div className="absolute top-3 right-0 flex gap-2">
+                                    {p.featured ? (
+                                        <>
+                                         <button className="w-9 h-9 rounded-lg border border-[#4040401A] p-1.5">
+
+                                     <Image
+                                      src="/bag-remove.svg"
+                                      alt="search icon"
+                                      width={24}
+                                      height={24} 
+                                      title="icon"
+                                     />
+                                 </button>
+                                 <button className="w-9 h-9 rounded-lg border border-[#4040401A] p-1.5">
+                                      <Image
+                                       src="/Subtract.svg"
+                                       alt="search icon"
+                                       width={24}
+                                       height={24} 
+                                       title="icon"
+                                      />
+                                 </button>
+                                        </>
+                                    ) : (
+                                        <>
+                                    <button className="w-9 h-9 rounded-lg border border-[#4040401A] p-1.5">
                                      <Image
                                       src="/bag-add.svg"
                                       alt="search icon"
@@ -132,6 +155,9 @@ const Similar = () => {
                                        title="icon"
                                       />
                                  </button>
+                                        </>
+                                     )}
+
                                     </div>
                                     <img src={p.img} alt={p.title} className="w-full h-44 object-contain p-4" />
                                 </div>
@@ -174,9 +200,9 @@ const Similar = () => {
 
                   <button 
                     id={prevEl}
-                    className="bg-[#BE968E] w-12 h-12 rounded-full flex justify-center items-center"
+                    className="bg-[#E8EDF2] w-12 h-12 rounded-full flex justify-center items-center"
                   >
-                    <GoChevronLeft size={24} className="text-white" />
+                    <GoChevronLeft size={24} className="text-black" />
                   </button>
 
                 </div>
