@@ -57,14 +57,14 @@ const Product = () => {
                     </div>
 
                     {/* Thumbnail Images */}
-                    <div className="flex gap-3">
-                        <div className="w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer">
+                    <div className="flex gap-3 relative">
+                        <div className="relative z-40 w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer">
                             <Image src="/images/produc2.png" alt="thumb1" width={142} height={142} className="w-full h-full object-cover" />
                         </div>
-                        <div className="w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer">
+                        <div className="relative z-40 w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer">
                             <Image src="/images/produc3.png" alt="thumb2" width={142} height={142} className="w-full h-full object-cover" />
                         </div>
-                        <div className="relative w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer flex items-center justify-center">
+                        <div className="relative z-40 w-35.5 h-35.5 bg-[#F5F5F5] rounded-lg overflow-hidden cursor-pointer flex items-center justify-center">
                             <Image src="/images/produc4.png" alt="thumb2" width={142} height={142} className="w-full h-full object-cover" />
                             <div className="absolute inset-0 bg-[#020202B2] bg-opacity-40 flex items-center justify-center"/>
                             <span className="absolute text-white text-3xl font-semibold">+2</span>

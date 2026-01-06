@@ -80,7 +80,7 @@ const Rating = () => {
           <div className="my-12 py-8">
               <div className="space-y-6">
                   {[1, 2, 3, 4].map((item) => (
-                      <div key={item} className="pb-6 border-b border-gray-200">
+                      <div key={item} className="pb-6 border-b border-gray-200 last:border-b-0">
                           <div className="flex items-start justify-between mb-3">
                               <div className="flex items-center gap-3">
                                   <h4 className="font-semibold text-[20px]">Alex Daewn</h4>

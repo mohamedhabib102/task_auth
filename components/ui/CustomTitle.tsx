@@ -9,9 +9,9 @@ interface Title {
 const CustomTitle: React.FC<Title> = ({ title }) => {
     return (
         <div className="text-left mb-7 select-none font-semibold relative z-40">
-            <h2 className="font-semibold text-2xl">{title}</h2>
+            <h2 className="font-semibold text-2xl relative z-40">{title}</h2>
             <span className="w-10 h-1 bg-[#BE968E] block rounded-2xl"></span>
-            <div className="absolute -top-10 z-20">
+            <div className="absolute lg:-top-48 -top-8 z-10">
             <Image
             src="/logo-trans.svg"
             alt="logo-trans"

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const ProductDetailsPage = () => {
   return (
-    <section className="pt-0 py-10">
+    <section>
           <Header/>
           <Landing/>
           <Product/>
