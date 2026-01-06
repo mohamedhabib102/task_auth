@@ -107,7 +107,7 @@ const PageRegister = () => {
                 setMessage("The email has already been taken");
                } 
                if (error.response?.status === 400){
-                setMessage("The mobile number has already been taken");
+                setMessage("Invalid phone number, country code, or number already registered");
                }
             }
         } finally{
