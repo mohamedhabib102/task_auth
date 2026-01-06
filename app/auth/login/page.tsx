@@ -9,15 +9,6 @@ import { AiOutlineLoading } from "react-icons/ai";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
-// mohamed12@gmail.com
-// @Mohamed7000
-
-
-
-// adam12@gmail.com
-//@Adam4000
-
-
 
 
 const PageLogin = () => {

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins} from "next/font/google";
 import "./globals.css";
 import { ContextProviderWrapper } from "@/lib/context/authContext";
-import Footer from "@/components/layout/Footer";
 
 
 const PoppinsFont = Poppins({
@@ -28,7 +27,6 @@ export default function RootLayout({
       >
         <ContextProviderWrapper>
           {children}
-          <Footer />
         </ContextProviderWrapper>
       </body>
     </html>

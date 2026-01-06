@@ -47,17 +47,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Policies - Desktop only */}
-            <div className="lg:block hidden">
-              <h4 className="font-semibold mb-4 text-lg">Policies</h4>
-              <ul className="text-sm space-y-3 text-[#E8DCD7]">
-                <li>Refund Policy</li>
-                <li>About Us</li>
-                <li>Cancellation Policy</li>
-                <li>Terms and Conditions</li>
-                <li>Privacy Policy</li>
-              </ul>
-            </div>
 
             {/* Let Us Help */}
             <div>
@@ -70,6 +59,20 @@ const Footer: React.FC = () => {
                 <li>All Products</li>
               </ul>
             </div>
+
+            {/* Policies - Desktop only */}
+            <div className="lg:block hidden">
+              <h4 className="font-semibold mb-4 text-lg">Policies</h4>
+              <ul className="text-sm space-y-3 text-[#E8DCD7]">
+                <li>Refund Policy</li>
+                <li>About Us</li>
+                <li>Cancellation Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+
+
 
             {/* Send Email + Follow */}
             <div className="col-span-2 lg:col-span-1">

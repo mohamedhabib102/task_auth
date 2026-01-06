@@ -161,14 +161,14 @@ const Similar = () => {
                 <div className="flex flex-row-reverse items-center gap-2 justify-center
                 mt-8">
                     <button 
-                    id={prevEl}
+                    id={nextEl}
                     className="bg-[#BE968E] w-12 h-12 rounded-full flex justify-center items-center"
                   >
                     <GoChevronRight size={24} className="text-white" />
                   </button>
                   
                   <button 
-                    id={nextEl}
+                    id={prevEl}
                     className="bg-[#BE968E] w-12 h-12 rounded-full flex justify-center items-center"
                   >
                     <GoChevronLeft size={24} className="text-white" />
