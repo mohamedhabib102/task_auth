@@ -1,16 +1,23 @@
 "use client";
 import { useAuth } from "@/lib/context/authContext";
-import { useState } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { FaUser, FaEnvelope, FaPhone, FaGlobe, FaCheck, FaTimes } from "react-icons/fa";
 import { LuLogOut } from "react-icons/lu";
 
 const Profile = () => {
     const {userData, logout} = useAuth()
+    const [load, setLoad] = useState(false)
+
+
+    useEffect(() => {
+        setLoad(!load)
+    }, [])
     
 
     return (
         <>
-        {userData?.id ? (
+        {load && userData?.id ? (
             <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-6">
             <div className="max-w-2xl mx-auto">
                 {/* Header */}
@@ -23,6 +30,16 @@ const Profile = () => {
 
                 {/* Profile Card */}
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-700">
+
+
+                    <Image
+                    src={userData?.image}
+                    alt=""
+                    title=""
+                    width={120}
+                    height={120}
+                    className="w-32 h-32 mx-auto mb-3"
+                    />
                     
                     {/* User ID */}
                     <div className="mb-6 pb-6 border-b border-gray-200 dark:border-gray-700">
