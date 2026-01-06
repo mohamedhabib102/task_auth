@@ -50,7 +50,6 @@ const PageLogin = () => {
 
         try {
             setLoading(true);
-            console.log(data);
             const fromData = new FormData();
     
             fromData.append("email", data?.email || '');

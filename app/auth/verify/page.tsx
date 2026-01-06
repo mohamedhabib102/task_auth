@@ -42,7 +42,7 @@ const PageLogin = () => {
              token: userData?.token!,
              email_verified_at: true,
             });
-            router.push("/auth/login");
+            router.push("/");
         } catch (error: unknown) {
             console.log(error);
             if (axios.isAxiosError(error)){

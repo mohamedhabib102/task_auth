@@ -68,7 +68,6 @@ const PageRegister = () => {
         }
         try {
             setLoading(true);
-            console.log(data);
             const fromData = new FormData();
             fromData.append("name", data?.name || '');
             fromData.append("email", data?.email || '');
